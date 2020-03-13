@@ -45,6 +45,7 @@ For **standard and premium tier** you must request a subscription which is subje
          "date": "2020-03-07"
       }
    ]
+}
 ```
 
 ## STANDARD TIER
@@ -78,6 +79,7 @@ DATE FORMAT: YYYY-MM-DD
          "date": "2020-03-13"
       }
    ]
+}
 ```
 
 ## PREMIUM TIER
@@ -110,6 +112,7 @@ DATE FORMAT: YYYY-MM-DD
          "date": "2020-03-13"
       }
    ]
+}
 ```
 
 **Terms of Use**

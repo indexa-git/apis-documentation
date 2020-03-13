@@ -126,6 +126,8 @@ DATE FORMAT: YYYY-MM-DD
          "date": "2020-02-07",
          "name": "poundsterlingbuyrate"
       }
+   ]
+}  
 ```
 **Terms of Use**
 Refer to this link to read the Terms of Use: 
