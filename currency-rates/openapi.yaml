@@ -10,38 +10,216 @@ schemes:
 produces:
   - application/json
 paths:
-  /rates:
+  /rates?bank={bank}:
     get:
-      summary: Gets rates of currencies of most banks.
-      operationId: getCurrencyRates
+      summary: Gets rates by bank
+      operationId: getCurrencyRatesbyBank
       parameters:
         - in: query
           name: bank
           type: string
-          required: false
+          required: true
+          description: "bpd"
+      responses:
+        200:
+          description: Prices have been retrieved successfully.
+        401:
+          description: Your token is not registered.
+        402:
+          description: Your token does not have access to this resource.
+        403:
+          description: No access token provided.
+        406:
+          description: No argument provided
+        407:
+          description: Your user does not have access to historic data.
+  /rates?bank={bank}&name={name}:
+    get:
+      summary: Gets rates by bank and name
+      operationId: getCurrencyRatesbyBank&Name
+      parameters:
+        - in: query
+          name: bank
+          type: string
+          required: true
           description: "bpd"
         - in: query
           name: name
           type: string
-          required: false
+          required: true
+          description: "dollarbuyrate"
+      responses:
+        200:
+          description: Prices have been retrieved successfully.
+        401:
+          description: Your token is not registered.
+        402:
+          description: Your token does not have access to this resource.
+        403:
+          description: No access token provided.
+        406:
+          description: No argument provided
+        407:
+          description: Your user does not have access to historic data.
+  /rates?bank={bank}&date={date}:
+    get:
+      summary: Gets rates by bank and date
+      operationId: getCurrencyRatesbyBank&Date
+      parameters:
+        - in: query
+          name: bank
+          type: string
+          required: true
+          description: "bpd"
+        - in: query
+          name: date
+          type: string
+          format: date
+          required: true
+          description: "2020-02-15"
+      responses:
+        200:
+          description: Prices have been retrieved successfully.
+        401:
+          description: Your token is not registered.
+        402:
+          description: Your token does not have access to this resource.
+        403:
+          description: No access token provided.
+        404:
+          description: Date format must be YYYY-MM-DD
+        406:
+          description: No argument provided
+        407:
+          description: Your user does not have access to historic data.
+  /rates?bank={bank}&date={date}&name={name}:
+    get:
+      summary: Gets rates by bank, date and name
+      operationId: getCurrencyRatesbyBank&Date&Name
+      parameters:
+        - in: query
+          name: bank
+          type: string
+          required: true
+          description: "bpd"
+        - in: query
+          name: name
+          type: string
+          required: true
           description: "dollarbuyrate"
         - in: query
           name: date
           type: string
           format: date
-          required: false
+          required: true
           description: "2020-02-15"
+      responses:
+        200:
+          description: Prices have been retrieved successfully.
+        401:
+          description: Your token is not registered.
+        402:
+          description: Your token does not have access to this resource.
+        403:
+          description: No access token provided.
+        404:
+          description: Date format must be YYYY-MM-DD
+        406:
+          description: No argument provided
+        407:
+          description: Your user does not have access to historic data.
+  /rates?bank={bank}&date_from={date_from}:
+    get:
+      summary: Gets rates by bank and date_from
+      operationId: getCurrencyRatesbyBank&DateFrom
+      parameters:
+        - in: query
+          name: bank
+          type: string
+          required: true
+          description: "bpd"
         - in: query
           name: date_from
           type: string
           format: date
-          required: false
+          required: true
+          description: "2020-02-15"
+      responses:
+        200:
+          description: Prices have been retrieved successfully.
+        401:
+          description: Your token is not registered.
+        402:
+          description: Your token does not have access to this resource.
+        403:
+          description: No access token provided.
+        404:
+          description: Date format must be YYYY-MM-DD
+        405:
+          description: date argument cannot be combined with date_from or date_to arguments.
+        406:
+          description: No argument provided
+        407:
+          description: Your user does not have access to historic data.
+  /rates?bank={bank}&name={name}&date_from={date_from}:
+    get:
+      summary: Gets rates by bank, name and date_from
+      operationId: getCurrencyRatesbyBank&Name&DateFrom
+      parameters:
+        - in: query
+          name: bank
+          type: string
+          required: true
+          description: "bpd"
+        - in: query
+          name: name
+          type: string
+          required: true
+          description: "dollarbuyrate"
+        - in: query
+          name: date_from
+          type: string
+          format: date
+          required: true
+          description: "2020-02-15"
+      responses:
+        200:
+          description: Prices have been retrieved successfully.
+        401:
+          description: Your token is not registered.
+        402:
+          description: Your token does not have access to this resource.
+        403:
+          description: No access token provided.
+        404:
+          description: Date format must be YYYY-MM-DD
+        405:
+          description: date argument cannot be combined with date_from or date_to arguments.
+        406:
+          description: No argument provided
+        407:
+          description: Your user does not have access to historic data.
+  /rates?bank={bank}&date_from={date_from}&date_to={date_to}:
+    get:
+      summary: Gets rates by bank, date_from and date_to
+      operationId: getCurrencyRatesbyBank&DateFrom&DateTo
+      parameters:
+        - in: query
+          name: bank
+          type: string
+          required: true
+          description: "bpd"
+        - in: query
+          name: date_from
+          type: string
+          format: date
+          required: true
           description: "2020-02-15"
         - in: query
           name: date_to
           type: string
           format: date
-          required: false
+          required: true
           description: "2020-02-19"
       responses:
         200:
@@ -60,6 +238,7 @@ paths:
           description: No argument provided
         407:
           description: Your user does not have access to historic data.
+
 security:
       - access_token: []
 securityDefinitions:
