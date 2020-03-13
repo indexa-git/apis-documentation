@@ -1,48 +1,64 @@
-  swagger: "2.0"
-  info:
-    title: DGII Taxpayer Information
-    description: This API retrieves fiscal identification data from the General Directorate of Internal Taxes (DGII) and other sources, to validate Personal and Legal entities TIN / VAT.
-    version: "1.0"
-  host: api3.indexa.do
-  basePath: /api
-  schemes:
-    - https
-  produces:
-    - application/json
-  paths:
-    /rnc:
-      get:
-        summary: Gets RNC data.
-        operationId: getRNCdata
-        parameters:
-          - in: query
-            name: rnc
-            type: string
-            required: false
-            description: This parameter receives the RNC.
-          - in: query
-            name: name
-            type: string
-            required: false
-            description: INDEXA SRL
-        responses:
-          200:
-            description: Prices have been retrieved successfully.
-          401:
-            description: Your token is not registered.
-          402:
-            description: Your token does not have access to this resource.
-          403:
-            description: No access token provided.
-          404:
-            description: You can only query by one field 'rnc' or 'name'
-          405:
-            description: No argument provided
+swagger: "2.0"
+info:
+  title: DGII Taxpayer Information
+  description: This API retrieves fiscal identification data from the General Directorate of Internal Taxes (DGII) and other sources, to validate Personal and Legal entities TIN / VAT.
+  version: "1.0"
+host: api3.indexa.do
+basePath: /api
+schemes:
+  - https
+produces:
+  - application/json
+paths:
+  /rnc?rnc={rnc}:
+    get:
+      summary: Gets fiscal identification data by RNC
+      operationId: getFIDbyRNC
+      parameters:
+        - in: query
+          name: rnc
+          type: string
+          required: true
+          description: '130313348'
+      responses:
+        200:
+          description: Data has been retrieved successfully.
+        401:
+          description: Your token is not registered.
+        402:
+          description: Your token does not have access to this resource.
+        403:
+          description: No access token provided.
+        405:
+          description: No argument provided
+  /rnc?name={name}:
+    get:
+      summary: Gets fiscal identification data by name
+      operationId: getFIDbyName
+      parameters:
+        - in: query
+          name: name
+          type: string
+          required: true
+          description: INDEXA SRL
+      responses:
+        200:
+          description: Data has been retrieved successfully.
+        401:
+          description: Your token is not registered.
+        402:
+          description: Your token does not have access to this resource.
+        403:
+          description: No access token provided.
+        404:
+          description: You can only query by one field 'rnc' or 'name'
+        405:
+          description: No argument provided
 
-  security:
-      - access_token: []
-  securityDefinitions:
-    access_token:
-      type: "apiKey"
-      name: "x-access-token"
-      in: "header" 
+security:
+    - access_token: []
+securityDefinitions:
+  access_token:
+    type: "apiKey"
+    name: "x-access-token"
+    in: "header" 
