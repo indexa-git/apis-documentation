@@ -29,17 +29,17 @@ paths:
           name: date
           type: string
           required: false
-          description: "2020-02-15"
+          description: "Sample: 2020-02-15"
         - in: query
           name: date_from
           type: string
           required: false
-          description: "2020-02-15"
+          description: "Sample: 2020-02-15"
         - in: query
           name: date_to
           type: string
           required: false
-          description: "2020-03-09"
+          description: "Sample: 2020-03-09"
       responses:
         200:
           description: Prices have been retrieved successfully.
