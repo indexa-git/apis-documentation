@@ -6,6 +6,9 @@
 
 `https://api.indexa.do/api/rates`
 
+**Terms of Use**
+Refer to this link to read the Terms of Use: https://indexa.do/api-terms-of-use
+
 **Authentication**
 For this API usage you must pass a token for authentication. A token is a tool which allow us to obtain usage metrics and security features in order to keep this service up and running.
 
