@@ -28,18 +28,21 @@ paths:
         - in: query
           name: date
           type: string
+          format: date
           required: false
-          description: "Sample: 2020-02-15"
+          description: "2020-02-15"
         - in: query
           name: date_from
           type: string
+          format: date
           required: false
-          description: "Sample: 2020-02-15"
+          description: "2020-02-15"
         - in: query
           name: date_to
           type: string
+          format: date
           required: false
-          description: "Sample: 2020-03-09"
+          description: "2020-02-19"
       responses:
         200:
           description: Prices have been retrieved successfully.
