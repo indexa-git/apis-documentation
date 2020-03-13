@@ -34,10 +34,17 @@ For **standard and premium tier** you must request a subscription which is subje
    "status": "success",
    "data": [
       {
-        
+         "name": "GasolinaPremium",
+         "price": 221.9,
+         "date": "2020-03-07"
+      },
+      ...,
+      {
+         "name": "GasNaturalVehicular(GNV)",
+         "price": 28.97,
+         "date": "2020-03-07"
       }
    ]
-}
 ```
 
 ## STANDARD TIER
@@ -49,9 +56,9 @@ DATE FORMAT: YYYY-MM-DD
 | QUERY PARAMETER | VALID OPTIONS  | QUERY SAMPLE |
 | --- | --- | --- |
 | name | all fuels | `https://api.indexa.do/api/fuels?name=GasolinaPremium`|
-| date | any date within current month | `https://api.indexa.do/api/fuels?date=2020-03-09`|
-| date_from | any date within current month | `https://api.indexa.do/api/fuels?date_from=2020-03-09`|
-| date_to | any date within current month | `https://api.indexa.do/api/fuels?date_from=2020-03-09&date_to=2020-03-11`|
+| date | any date within current month | `https://api.indexa.do/api/fuels?date=2020-03-07`|
+| date_from | any date within current month | `https://api.indexa.do/api/fuels?date_from=2020-03-13`|
+| date_to | any date within current month | `https://api.indexa.do/api/fuels?date_from=2020-03-07&date_to=2020-03-13`|
 
 ### **Sample Response**
 
@@ -59,9 +66,18 @@ DATE FORMAT: YYYY-MM-DD
 {
    "status": "success",
    "data": [
-     
+      {
+         "name": "GasolinaPremium",
+         "price": 221.9,
+         "date": "2020-03-07"
+      },
+      ...,
+      {
+         "name": "GasLicuadodePetroleo(GLP)",
+         "price": 82.5,
+         "date": "2020-03-13"
+      }
    ]
-}
 ```
 
 ## PREMIUM TIER
@@ -73,7 +89,7 @@ DATE FORMAT: YYYY-MM-DD
 | QUERY PARAMETER | VALID OPTIONS  | QUERY SAMPLE |
 | --- | --- | --- |
 | date | any date within current year | `https://api.indexa.do/api/fuels?date=2020-03-09`|
-| date_from | any date within current year | `https://api.indexa.do/api/fuels?date_from=2020-03-09`|
+| date_from | any date within current year | `https://api.indexa.do/api/fuels?date_from=2020-01-01`|
 | date_to | any date within current month | `https://api.indexa.do/api/fuels?date_from=2020-01-01&date_to=2020-03-09`|
 
 ### **Sample Response**
@@ -82,8 +98,17 @@ DATE FORMAT: YYYY-MM-DD
 {
    "status": "success",
    "data": [
-   
-    ]
- }
+      {
+         "name": "GasolinaPremium",
+         "price": 233.2,
+         "date": "2020-01-04"
+      },
+      ...,
+      {
+         "name": "GasLicuadodePetroleo(GLP)",
+         "price": 82.5,
+         "date": "2020-03-13"
+      }
+   ]
 ```
 

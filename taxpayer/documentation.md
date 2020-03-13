@@ -30,7 +30,9 @@ For **standard and premium tier** you must request a subscription which is subje
    "status": "success",
    "data": [
       {
-        
+         "rnc": "131793916",
+         "business_name": "INDEXA SRL",
+         "state": "ACTIVO"
       }
    ]
 }
@@ -46,7 +48,16 @@ For **standard and premium tier** you must request a subscription which is subje
 {
    "status": "success",
    "data": [
-     
+      {
+         "rnc": "131793916",
+         "business_name": "INDEXA SRL",
+         "tradename": "INDEXA",
+         "state": "ACTIVO",
+         "payment_regime": "NORMAL",
+         "sector": "LOS RESTAURADORES",
+         "street": "4",
+         "street_number": "18"
+      }
    ]
 }
 ```
@@ -61,7 +72,18 @@ For **standard and premium tier** you must request a subscription which is subje
 {
    "status": "success",
    "data": [
-   
-    ]
- }
+      {
+         "rnc": "131793916",
+         "business_name": "INDEXA SRL",
+         "tradename": "INDEXA",
+         "economic_activity": "VENTA AL POR MAYOR DE SOFTWARE",
+         "state": "ACTIVO",
+         "payment_regime": "NORMAL",
+         "constitution_date": "2018-07-20",
+         "sector": "LOS RESTAURADORES",
+         "street": "4",
+         "street_number": "18"
+      }
+   ]
+}
 ```
