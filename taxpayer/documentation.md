@@ -90,3 +90,6 @@ For **standard and premium tier** you must request a subscription which is subje
    ]
 }
 ```
+
+**Terms of Use**
+Refer to this link to read the Terms of Use: https://indexa.do/api-terms-of-use
