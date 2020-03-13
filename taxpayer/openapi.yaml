@@ -10,40 +10,24 @@ schemes:
 produces:
   - application/json
 paths:
-  /rnc?rnc={rnc}:
+  /rnc:
     get:
-      summary: Gets fiscal identification data by RNC
-      operationId: getFIDbyRNC
+      summary: Gets RNC data.
+      operationId: getRNCdata
       parameters:
         - in: query
           name: rnc
           type: string
-          required: true
-          description: '130313348'
-      responses:
-        200:
-          description: Data has been retrieved successfully.
-        401:
-          description: Your token is not registered.
-        402:
-          description: Your token does not have access to this resource.
-        403:
-          description: No access token provided.
-        405:
-          description: No argument provided
-  /rnc?name={name}:
-    get:
-      summary: Gets fiscal identification data by name
-      operationId: getFIDbyName
-      parameters:
+          required: false
+          description: "Sample: 130318839"
         - in: query
           name: name
           type: string
-          required: true
-          description: INDEXA SRL
+          required: false
+          description: "Sample: INDEXA SRL"
       responses:
         200:
-          description: Data has been retrieved successfully.
+          description: Prices have been retrieved successfully.
         401:
           description: Your token is not registered.
         402:
@@ -54,11 +38,10 @@ paths:
           description: You can only query by one field 'rnc' or 'name'
         405:
           description: No argument provided
-
-security:
-    - access_token: []
+      security:
+      - access_token: []
 securityDefinitions:
   access_token:
     type: "apiKey"
     name: "x-access-token"
-    in: "header" 
+    in: "header"
