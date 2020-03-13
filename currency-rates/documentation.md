@@ -128,4 +128,5 @@ DATE FORMAT: YYYY-MM-DD
       }
 ```
 **Terms of Use**
-Refer to this link to read the Terms of Use: https://indexa.do/api-terms-of-use
+Refer to this link to read the Terms of Use: 
+https://indexa.do/api-terms-of-use
