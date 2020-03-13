@@ -1,0 +1,66 @@
+swagger: "2.0"
+info:
+  title: Dominican Currency Rates
+  description: Major banks and currencies used in the Dominican Republic are available through this endpoint.
+  version: "1.0"
+host: api3.indexa.do
+basePath: /api
+schemes:
+  - https
+produces:
+  - application/json
+paths:
+  /rates:
+    get:
+      summary: Gets rates of currencies of most banks.
+      operationId: getCurrencyRates
+      parameters:
+        - in: query
+          name: bank
+          type: string
+          required: false
+          description: "bpd"
+        - in: query
+          name: name
+          type: string
+          required: false
+          description: "dollarbuyrate"
+        - in: query
+          name: date
+          type: string
+          required: false
+          description: "2020-02-15"
+        - in: query
+          name: date_from
+          type: string
+          required: false
+          description: "2020-02-15"
+        - in: query
+          name: date_to
+          type: string
+          required: false
+          description: "2020-03-09"
+      responses:
+        200:
+          description: Prices have been retrieved successfully.
+        401:
+          description: Your token is not registered.
+        402:
+          description: Your token does not have access to this resource.
+        403:
+          description: No access token provided.
+        404:
+          description: Date format must be YYYY-MM-DD
+        405:
+          description: date argument cannot be combined with date_from or date_to arguments.
+        406:
+          description: No argument provided
+        407:
+          description: Your user does not have access to historic data.
+security:
+      - access_token: []
+securityDefinitions:
+  access_token:
+    type: "apiKey"
+    name: "x-access-token"
+    in: "header"
