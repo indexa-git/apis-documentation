@@ -38,4 +38,11 @@
             description: You can only query by one field 'rnc' or 'name'
           405:
             description: No argument provided
-    
+
+  security:
+      - access_token: []
+  securityDefinitions:
+    access_token:
+      type: "apiKey"
+      name: "x-access-token"
+      in: "header" 
