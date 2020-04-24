@@ -32,6 +32,18 @@ You can obtain a **free tier token** in the API gallery by selecting an API and 
 ```
 {
    "status": "success",
-   "isvalid": false
+   "message": "according to DGII, this NCF is not valid for this RNC.",
+   "valid": false
+}
+```
+
+**ERROR RESPONSE**
+
+### **Sample Response**
+
+```
+{
+   "status": "error",
+   "message": "You submitted a 'ncf' with invalid format"
 }
 ```
