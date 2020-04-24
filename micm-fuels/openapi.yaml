@@ -3,7 +3,7 @@ info:
   title: MICM Fuels Prices
   description: This API offers all fuels prices offered by the MICM on a weekly basis, we update this information every friday for you to have an up to date information on fuels.
   version: "1.0"
-host: api3.indexa.do
+host: api.indexa.do
 basePath: /api
 schemes:
   - https
@@ -55,9 +55,9 @@ paths:
           description: No argument provided
         407:
           description: Your user does not have access to historic data.
-        
+
       security:
-      - access_token: []
+        - access_token: []
 securityDefinitions:
   access_token:
     type: "apiKey"

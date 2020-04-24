@@ -1,0 +1,39 @@
+swagger: "2.0"
+info:
+  title: NCF Validation
+  description: Validate your NCFs with this API
+  version: "1.0"
+host: api.indexa.do
+basePath: /api
+schemes:
+  - https
+produces:
+  - application/json
+paths:
+  /validate-ncf:
+    get:
+      summary: Validate your NCFs with this API
+      operationId: validateNCF
+      parameters:
+        - in: query
+          name: ncf
+          type: string
+          required: true
+          description: This parameter receives a NCF.
+        - in: query
+          name: rnc
+          type: string
+          required: true
+          description: This parameter receives a RNC.
+      responses:
+        200:
+          description: Your validation was successful.
+        400:
+          description: The format of the parameters were invalid.
+security:
+  - access_token: []
+securityDefinitions:
+  access_token:
+    type: "apiKey"
+    name: "x-access-token"
+    in: "header"

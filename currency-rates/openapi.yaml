@@ -3,7 +3,7 @@ info:
   title: Dominican Currency Rates
   description: Major banks and currencies used in the Dominican Republic are available through this endpoint.
   version: "1.0"
-host: api3.indexa.do
+host: api.indexa.do
 basePath: /api
 schemes:
   - https
@@ -19,12 +19,12 @@ paths:
           name: bank
           type: string
           required: false
-          description: "This parameter receives an acronym of a bank's name."
+          description: "bank's name acronym - {bpd}"
         - in: query
           name: name
           type: string
           required: false
-          description: This parameter receives a name of a currency buy or sell rate.
+          description: "rate"
         - in: query
           name: date
           type: string
@@ -61,7 +61,7 @@ paths:
         407:
           description: Your user does not have access to historic data.
 security:
-      - access_token: []
+  - access_token: []
 securityDefinitions:
   access_token:
     type: "apiKey"

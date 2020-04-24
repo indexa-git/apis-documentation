@@ -3,7 +3,7 @@ info:
   title: DGII Taxpayer Information
   description: This API retrieves fiscal identification data from the General Directorate of Internal Taxes (DGII) and other sources, to validate Personal and Legal entities TIN / VAT.
   version: "1.0"
-host: api3.indexa.do
+host: api.indexa.do
 basePath: /api
 schemes:
   - https
@@ -39,7 +39,7 @@ paths:
         405:
           description: No argument provided
       security:
-      - access_token: []
+        - access_token: []
 securityDefinitions:
   access_token:
     type: "apiKey"
