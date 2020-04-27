@@ -10,7 +10,7 @@ Los usuarios que desean utilizar las API deben registrar un aplicación que perm
 
 
 <div>
-<p style="text-align:center;"><b>1. Inicie sesión en el Portal para desarrolladores de Indexa</b></p>
+<p align="center"><b>1. Inicie sesión en el Portal para desarrolladores de Indexa</b></p>
 
 <img src="https://raw.githubusercontent.com/indexa-git/apis-documentation/master/consumer-guide/images/login.png" alt="drawing" width="500" height="150"/>
 
