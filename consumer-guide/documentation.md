@@ -12,22 +12,22 @@ Los usuarios que desean utilizar las API deben registrar un aplicación que perm
 <div>
 <p align="center"><b>1. Inicie sesión en el Portal para desarrolladores de Indexa</b></p>
 
-<img src="https://raw.githubusercontent.com/indexa-git/apis-documentation/master/consumer-guide/images/login.png" alt="drawing" width="500" height="150"/>
+<img align="center" src="https://raw.githubusercontent.com/indexa-git/apis-documentation/master/consumer-guide/images/login.png" alt="drawing" width="500" height="150"/>
 
-<p><b>2. Abra el menú del usuario (arriba a la derecha) y haga clic en Aplicaciones.</b></p>
+<p align="center"><b>2. Abra el menú del usuario (arriba a la derecha) y haga clic en Aplicaciones.</b></p>
 
-<img src="https://raw.githubusercontent.com/indexa-git/apis-documentation/master/consumer-guide/images/application.png" alt="drawing" width="200" height="250"/>
+<img align="center" src="https://raw.githubusercontent.com/indexa-git/apis-documentation/master/consumer-guide/images/application.png" alt="drawing" width="200" height="250"/>
 
-<p><b>3. Desde la pantalla de aplicaciones, haga clic en el botón (+) para crear una nueva aplicación.</b></p>
+<p align="center"><b>3. Desde la pantalla de aplicaciones, haga clic en el botón (+) para crear una nueva aplicación.</b></p>
 
 
-<img src="https://raw.githubusercontent.com/indexa-git/apis-documentation/master/consumer-guide/images/application2.png" alt="drawing" width="250" height="250"/>
+<img align="center" src="https://raw.githubusercontent.com/indexa-git/apis-documentation/master/consumer-guide/images/application2.png" alt="drawing" width="250" height="250"/>
 
-<img src="https://raw.githubusercontent.com/indexa-git/apis-documentation/master/consumer-guide/images/application3.png" alt="drawing" width="600" height="200"/>
+<img align="center" src="https://raw.githubusercontent.com/indexa-git/apis-documentation/master/consumer-guide/images/application3.png" alt="drawing" width="600" height="200"/>
 
-<p><b>4. Ingrese el nombre y la descripción de la aplicación y presione GUARDAR.</b></p>
+<p align="center"><b>4. Ingrese el nombre y la descripción de la aplicación y presione GUARDAR.</b></p>
 
-<p>Haga clic en GUARDAR para registrar su solicitud</p>
+<p align="center">Haga clic en GUARDAR para registrar su solicitud</p>
 
-<p>Su aplicación está creada y puede usarla para suscribirse a una API.</p>
+<p align="center">Su aplicación está creada y puede usarla para suscribirse a una API.</p>
 </div>
