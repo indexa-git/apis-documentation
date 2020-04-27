@@ -6,21 +6,20 @@ Debe tener una cuenta de usuario para registrar una aplicación y suscribirse a 
 
 ***Create an application***
 
-Los usuarios que desean utilizar las API deben registrar una aplicación que permita a los editores de API controlar y regular el acceso a sus API. Normalmente, la aplicación puede ser una aplicación web, una aplicación nativa, etc.
+Los usuarios que desean utilizar las API deben registrar un aplicación que permita a los editores de API controlar y regular el acceso a sus API. Normalmente, la aplicación puede ser una aplicación web, una aplicación nativa, etc.
 
 **1. Inicie sesión en el Portal para desarrolladores de Indexa.**
 
-![alt text](https://raw.githubusercontent.com/indexa-git/apis-documentation/master/consumer-guide/images/login.png "Login")
-
+<img src="https://raw.githubusercontent.com/indexa-git/apis-documentation/master/consumer-guide/images/login.png" alt="drawing" width="500" height="150"/>
 **2. Abra el menú del usuario (arriba a la derecha) y haga clic en Aplicaciones.**
 
-![alt text](https://raw.githubusercontent.com/indexa-git/apis-documentation/master/consumer-guide/images/application.png "Application")
+<img src="https://raw.githubusercontent.com/indexa-git/apis-documentation/master/consumer-guide/images/application.png" alt="drawing" width="400" height="400"/>
 
 **3. Desde la pantalla de aplicaciones, haga clic en el botón (+) para crear una nueva aplicación.**
 
-![alt text](https://raw.githubusercontent.com/indexa-git/apis-documentation/master/consumer-guide/images/application2.png "Application 2")
+<img src="https://raw.githubusercontent.com/indexa-git/apis-documentation/master/consumer-guide/images/application2.png" alt="drawing" width="400" height="400"/>
 
-![alt text](https://raw.githubusercontent.com/indexa-git/apis-documentation/master/consumer-guide/images/application3.png "Application 3")
+<img src="https://raw.githubusercontent.com/indexa-git/apis-documentation/master/consumer-guide/images/application3.png" alt="drawing" width="600" height="200"/>
 
 **4. Ingrese el nombre y la descripción de la aplicación y presione GUARDAR.**
 
