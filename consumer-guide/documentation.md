@@ -8,13 +8,15 @@ Debe tener una cuenta de usuario para registrar una aplicación y suscribirse a 
 
 Los usuarios que desean utilizar las API deben registrar un aplicación que permita a los editores de API controlar y regular el acceso a sus API. Normalmente, la aplicación puede ser una aplicación web, una aplicación nativa, etc.
 <html>
+  <head>
 <style type="text/css">
 .b {
   margin-right: auto;
   margin-top: auto;
 }
 </style>
-
+  </head>
+<body>
 <div>
 <p align="center"><b>1. Inicie sesión en el Portal para desarrolladores de Indexa</b><img src="https://raw.githubusercontent.com/indexa-git/apis-documentation/master/consumer-guide/images/login.png" alt="drawing" width="500" height="150"/></p>
 
@@ -34,4 +36,5 @@ Los usuarios que desean utilizar las API deben registrar un aplicación que perm
 
 <p align="center">Su aplicación está creada y puede usarla para suscribirse a una API.</p>
 </div>
+</body>
 </html>
