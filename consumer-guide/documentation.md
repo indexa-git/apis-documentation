@@ -1,4 +1,4 @@
-***GUÍA DEL CONSUMIDOR***
+***CONSUMER GUIDE***
 
 Para acceder a estas API, los usuarios deben suscribirse a los planes de las API con su aplicación registrada para comenzar a jugar con las API.
 
@@ -13,11 +13,11 @@ Los usuarios que desean utilizar las API deben registrar un aplicación que perm
 <img src="https://raw.githubusercontent.com/indexa-git/apis-documentation/master/consumer-guide/images/login.png" alt="drawing" width="500" height="150"/>
 **2. Abra el menú del usuario (arriba a la derecha) y haga clic en Aplicaciones.**
 
-<img src="https://raw.githubusercontent.com/indexa-git/apis-documentation/master/consumer-guide/images/application.png" alt="drawing" width="400" height="400"/>
+<img src="https://raw.githubusercontent.com/indexa-git/apis-documentation/master/consumer-guide/images/application.png" alt="drawing" width="200" height="250"/>
 
 **3. Desde la pantalla de aplicaciones, haga clic en el botón (+) para crear una nueva aplicación.**
 
-<img src="https://raw.githubusercontent.com/indexa-git/apis-documentation/master/consumer-guide/images/application2.png" alt="drawing" width="400" height="400"/>
+<img src="https://raw.githubusercontent.com/indexa-git/apis-documentation/master/consumer-guide/images/application2.png" alt="drawing" width="250" height="250"/>
 
 <img src="https://raw.githubusercontent.com/indexa-git/apis-documentation/master/consumer-guide/images/application3.png" alt="drawing" width="600" height="200"/>
 
