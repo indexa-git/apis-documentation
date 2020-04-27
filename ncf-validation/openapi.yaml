@@ -10,7 +10,7 @@ schemes:
 produces:
   - application/json
 paths:
-  /validate-ncf:
+  /ncf:
     get:
       summary: Validate your NCFs with this API
       operationId: validateNCF
