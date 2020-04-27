@@ -7,7 +7,7 @@ Debe tener una cuenta de usuario para registrar una aplicación y suscribirse a 
 ***Create an application***
 
 Los usuarios que desean utilizar las API deben registrar un aplicación que permita a los editores de API controlar y regular el acceso a sus API. Normalmente, la aplicación puede ser una aplicación web, una aplicación nativa, etc.
-
+<html>
 <style type="text/css">
 .b {
   margin-right: auto;
@@ -34,3 +34,4 @@ Los usuarios que desean utilizar las API deben registrar un aplicación que perm
 
 <p align="center">Su aplicación está creada y puede usarla para suscribirse a una API.</p>
 </div>
+</html>
