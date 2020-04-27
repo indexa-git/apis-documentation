@@ -10,17 +10,17 @@ Los usuarios que desean utilizar las API deben registrar una aplicación que per
 
 **1. Inicie sesión en el Portal para desarrolladores de Indexa.**
 
-![alt text](https://github.com/indexa-git/apis-documentation/blob/master/consumer-guide/images/login.png "Login")
+![alt text](https://raw.githubusercontent.com/indexa-git/apis-documentation/master/consumer-guide/images/login.png "Login")
 
 **2. Abra el menú del usuario (arriba a la derecha) y haga clic en Aplicaciones.**
 
-![alt text](https://github.com/indexa-git/apis-documentation/blob/master/consumer-guide/images/application.png "Application")
+![alt text](https://raw.githubusercontent.com/indexa-git/apis-documentation/master/consumer-guide/images/application.png "Application")
 
 **3. Desde la pantalla de aplicaciones, haga clic en el botón (+) para crear una nueva aplicación.**
 
-![alt text](https://github.com/indexa-git/apis-documentation/blob/master/consumer-guide/images/application2.png "Application 2")
+![alt text](https://raw.githubusercontent.com/indexa-git/apis-documentation/master/consumer-guide/images/application2.png "Application 2")
 
-![alt text](https://github.com/indexa-git/apis-documentation/blob/master/consumer-guide/images/application3.png "Application 3")
+![alt text](https://raw.githubusercontent.com/indexa-git/apis-documentation/master/consumer-guide/images/application3.png "Application 3")
 
 **4. Ingrese el nombre y la descripción de la aplicación y presione GUARDAR.**
 
