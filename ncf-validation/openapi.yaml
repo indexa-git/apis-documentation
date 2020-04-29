@@ -1,7 +1,7 @@
 swagger: "2.0"
 info:
-  title: NCF Validation
-  description: Validate your NCFs with this API
+  title: NCF/E-NCF Validation
+  description: Validate your NCFs/E-CFs with this API
   version: "1.0"
 host: api.indexa.do
 basePath: /api
@@ -12,24 +12,50 @@ produces:
 paths:
   /ncf:
     get:
-      summary: Validate your NCFs with this API
+      summary: Validate your NCFs/E-CFs with this API
       operationId: validateNCF
       parameters:
         - in: query
           name: ncf
           type: string
           required: true
-          description: This parameter receives a NCF.
+          description: This parameter receives a NCF or E-NCF.
         - in: query
           name: rnc
           type: string
           required: true
           description: This parameter receives a RNC.
+        - in: query
+          name: buyerRNC
+          type: string
+          required: false
+          description: This parameter receives a buyers RNC (only for E-CFs).
+        - in: query
+          name: securityCode
+          type: string
+          required: true
+          description: This parameter receives a security code (only for E-CFs).
       responses:
-        200:
-          description: Your validation was successful.
-        400:
-          description: The format of the parameters were invalid.
+        201:
+          description: Your validation was successful and the NCF/ECF is valid.
+        202:
+          description: Your validation was successful and the NCF/ECF is invalid.
+        401:
+          description: The submitted RNC is invalid.
+        402:
+          description: The submitted NCF/ENCF is invalid.
+        403:
+          description: The submitted buyerRNC is invalid.
+        404:
+          description: You are missing 'rnc' parameter.
+        405:
+          description: You are missing 'ncf' parameter.
+        406:
+          description: You are missing 'buyerRNC' parameter.
+        407:
+          description: You are missing 'securityCode' parameter.
+        500:
+          description: There was an error reaching DGII WebService.
 security:
   - access_token: []
 securityDefinitions:
