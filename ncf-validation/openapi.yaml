@@ -1,7 +1,7 @@
 swagger: "2.0"
 info:
-  title: NCF/E-CF Validation
-  description: Validate your NCFs/E-CFs with this API
+  title: NCF Validation (also supports E-CFs)
+  description: Validate your NCFs with this API (also supports E-CFs)
   version: "1.0"
 host: api.indexa.do
 basePath: /api
@@ -12,14 +12,14 @@ produces:
 paths:
   /ncf:
     get:
-      summary: Validate your NCFs/E-CFs with this API
+      summary: Validate your NCFs with this API (also supports E-CFs)
       operationId: validateNCF
       parameters:
         - in: query
           name: ncf
           type: string
           required: true
-          description: This parameter receives a NCF/E-CF.
+          description: This parameter receives a NCF.
         - in: query
           name: rnc
           type: string
@@ -37,13 +37,13 @@ paths:
           description: This parameter receives a security code (only for E-CFs).
       responses:
         201:
-          description: Your validation was successful and the NCF/ECF is valid.
+          description: Your validation was successful and the NCF is valid.
         202:
-          description: Your validation was successful and the NCF/ECF is invalid.
+          description: Your validation was successful and the NCF is invalid.
         401:
           description: The submitted RNC is invalid.
         402:
-          description: The submitted NCF/E-CF is invalid.
+          description: The submitted NCF is invalid.
         403:
           description: The submitted buyerRNC is invalid.
         404:
