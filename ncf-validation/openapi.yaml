@@ -33,7 +33,7 @@ paths:
         - in: query
           name: securityCode
           type: string
-          required: true
+          required: false
           description: This parameter receives a security code (only for E-CFs).
       responses:
         201:
