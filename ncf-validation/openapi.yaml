@@ -1,6 +1,6 @@
 swagger: "2.0"
 info:
-  title: NCF/E-NCF Validation
+  title: NCF/E-CF Validation
   description: Validate your NCFs/E-CFs with this API
   version: "1.0"
 host: api.indexa.do
@@ -43,7 +43,7 @@ paths:
         401:
           description: The submitted RNC is invalid.
         402:
-          description: The submitted NCF/ENCF is invalid.
+          description: The submitted NCF/E-CF is invalid.
         403:
           description: The submitted buyerRNC is invalid.
         404:
