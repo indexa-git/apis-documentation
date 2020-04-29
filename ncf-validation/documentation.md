@@ -27,7 +27,7 @@ You can obtain a **free tier token** in the API gallery by selecting an API and 
 | ---------------- | ------------------------------------------------------------- |
 | ncf, rnc         | `https://api.indexa.do/api/ncf?rnc=130216748&ncf=B0100000005` |
 
-**QUERY PARAMETERS FOR A E-NCF**
+**QUERY PARAMETERS FOR A E-CF**
 
 | QUERY PARAMETERS                 | QUERY SAMPLE                                                                                          |
 | -------------------------------- | ----------------------------------------------------------------------------------------------------- |
@@ -38,7 +38,7 @@ You can obtain a **free tier token** in the API gallery by selecting an API and 
 ```
 {
    "status": "success",
-   "message": "according to DGII, this E-NCF/NCF is not valid for this RNC.",
+   "message": "according to DGII, this E-CF/NCF is not valid for this RNC.",
    "valid": false
 }
 ```
