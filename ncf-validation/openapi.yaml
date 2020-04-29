@@ -19,7 +19,7 @@ paths:
           name: ncf
           type: string
           required: true
-          description: This parameter receives a NCF or E-NCF.
+          description: This parameter receives a NCF/E-NCF.
         - in: query
           name: rnc
           type: string
