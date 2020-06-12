@@ -1,5 +1,7 @@
 ## Dominican Currency Rates - Usage
+
 ### /rates
+
 ###### Allowed HTTP requests: **GET**
 
 **ENDPOINT**
@@ -11,7 +13,7 @@ For this API usage you must pass a token for authentication. A token is a tool w
 
 **How do you pass your token?**
 
-Just include `{'x-access-token': '<your_token>'} ` in your request headers.
+Just include `{'x-access-token': '<your_token>'}` in your request headers.
 
 **How do I get my token?**
 
@@ -21,24 +23,24 @@ For **standard and premium tier** you must request a subscription which is subje
 
 **AVALIABLE BANKS**
 
-| BANK NAME | BANK CODE | BUY RATE NAME | SELL RATE NAME |
-| --- | --- | --- | --- |
-| Banco Popular Dominicano | bpd | dollarbuyrate, eurobuyrate | dollarsellrate, eurosellrate |
-| Banco de Reservas	 | bnr | dollarbuyrate, eurobuyrate | dollarsellrate, eurosellrate |
-| Banco del Progreso | bpr | dollarbuyrate, eurobuyrate | dollarsellrate, eurosellrate |
-| Banco Santa Cruz | bsc | dollarbuyrate, eurobuyrate, swissfrancbuyrate, poundsterlingbuyrate, cdollarbuyrate | dollarsellrate, eurosellrate, swissfrancsellrate, poundsterlingsellrate, cdollarsellrate |
-| Banco BDI | bdi | dollarbuyrate, eurobuyrate | dollarsellrate, eurosellrate |
-| Banco Central de RD | bcd | dollarbuyrate	 | dollarsellrate |
-| Banco Promerica | bpm | dollarbuyrate, eurobuyrate | dollarsellrate, eurosellrate |
-| Banco Vimenca | bvm | dollarbuyrate, eurobuyrate | dollarsellrate, eurosellrate |
+| BANK NAME                | BANK CODE | BUY RATE NAME                                                                       | SELL RATE NAME                                                                           |
+| ------------------------ | --------- | ----------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| Banco Popular Dominicano | bpd       | dollarbuyrate, eurobuyrate                                                          | dollarsellrate, eurosellrate                                                             |
+| Banco de Reservas        | bnr       | dollarbuyrate, eurobuyrate                                                          | dollarsellrate, eurosellrate                                                             |
+| Scotia Bank              | bns       | dollarbuyrate, eurobuyrate, cdollarbuyrate                                          | dollarsellrate, eurosellrate, cdollarsellrate                                            |
+| Banco Santa Cruz         | bsc       | dollarbuyrate, eurobuyrate, swissfrancbuyrate, poundsterlingbuyrate, cdollarbuyrate | dollarsellrate, eurosellrate, swissfrancsellrate, poundsterlingsellrate, cdollarsellrate |
+| Banco BDI                | bdi       | dollarbuyrate, eurobuyrate                                                          | dollarsellrate, eurosellrate                                                             |
+| Banco Central de RD      | bcd       | dollarbuyrate                                                                       | dollarsellrate                                                                           |
+| Banco Promerica          | bpm       | dollarbuyrate, eurobuyrate                                                          | dollarsellrate, eurosellrate                                                             |
+| Banco Vimenca            | bvm       | dollarbuyrate, eurobuyrate                                                          | dollarsellrate, eurosellrate                                                             |
 
 ## FREE TIER
 
 **QUERY PARAMETERS RESTRICTIONS**
 
-| QUERY PARAMETER | VALID OPTIONS  | QUERY SAMPLE |
-| --- | --- | --- |
-| bank | bpd, bcd | `https://api.indexa.do/api/rates?bank=bpd`|
+| QUERY PARAMETER | VALID OPTIONS | QUERY SAMPLE                               |
+| --------------- | ------------- | ------------------------------------------ |
+| bank            | bpd, bcd      | `https://api.indexa.do/api/rates?bank=bpd` |
 
 ### **Sample Response**
 
@@ -62,13 +64,13 @@ For **standard and premium tier** you must request a subscription which is subje
 
 DATE FORMAT: YYYY-MM-DD
 
-| QUERY PARAMETER | VALID OPTIONS  | QUERY SAMPLE |
-| --- | --- | --- |
-| bank | all banks | `https://api.indexa.do/api/rates?bank=bpd`|
-| name | dollarsellrate, dollarbuyrate, eurosellrate, eurobuyrate | `https://api.indexa.do/api/rates?bank=bpd&name=dollarbuyrate`|
-| date | any date no more than 7 days ago | `https://api.indexa.do/api/rates?bank=bpd&date=2020-03-09`|
-| date_from | any date no more than 7 days ago | `https://api.indexa.do/api/rates?bank=bpd&date_from=2020-03-09`|
-| date_to | any date no more than 7 days ago | `https://api.indexa.do/api/rates?bank=bpd&date_from=2020-03-09&date_to=2020-03-11`|
+| QUERY PARAMETER | VALID OPTIONS                                            | QUERY SAMPLE                                                                       |
+| --------------- | -------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| bank            | all banks                                                | `https://api.indexa.do/api/rates?bank=bpd`                                         |
+| name            | dollarsellrate, dollarbuyrate, eurosellrate, eurobuyrate | `https://api.indexa.do/api/rates?bank=bpd&name=dollarbuyrate`                      |
+| date            | any date no more than 7 days ago                         | `https://api.indexa.do/api/rates?bank=bpd&date=2020-03-09`                         |
+| date_from       | any date no more than 7 days ago                         | `https://api.indexa.do/api/rates?bank=bpd&date_from=2020-03-09`                    |
+| date_to         | any date no more than 7 days ago                         | `https://api.indexa.do/api/rates?bank=bpd&date_from=2020-03-09&date_to=2020-03-11` |
 
 ### **Sample Response**
 
@@ -99,13 +101,13 @@ DATE FORMAT: YYYY-MM-DD
 
 DATE FORMAT: YYYY-MM-DD
 
-| QUERY PARAMETER | VALID OPTIONS  | QUERY SAMPLE |
-| --- | --- | --- |
-| bank | all banks | `https://api.indexa.do/api/rates?bank=bpd`|
-| name | all currencies | `https://api.indexa.do/api/rates?bank=bsc&name=poundsterlingbuyrate`|
-| date | any date no more than 30 days ago | `https://api.indexa.do/api/rates?bank=bpd&date=2020-02-15`|
-| date_from | any date no more than 30 days ago | `https://api.indexa.do/api/rates?bank=bpd&date_from=2020-03-09`|
-| date_to | any date no more than 30 days ago | `https://api.indexa.do/api/rates?bank=bpd&date_from=2020-02-18&date_to=2020-03-11`|
+| QUERY PARAMETER | VALID OPTIONS                     | QUERY SAMPLE                                                                       |
+| --------------- | --------------------------------- | ---------------------------------------------------------------------------------- |
+| bank            | all banks                         | `https://api.indexa.do/api/rates?bank=bpd`                                         |
+| name            | all currencies                    | `https://api.indexa.do/api/rates?bank=bsc&name=poundsterlingbuyrate`               |
+| date            | any date no more than 30 days ago | `https://api.indexa.do/api/rates?bank=bpd&date=2020-02-15`                         |
+| date_from       | any date no more than 30 days ago | `https://api.indexa.do/api/rates?bank=bpd&date_from=2020-03-09`                    |
+| date_to         | any date no more than 30 days ago | `https://api.indexa.do/api/rates?bank=bpd&date_from=2020-02-18&date_to=2020-03-11` |
 
 ### **Sample Response**
 
@@ -127,8 +129,9 @@ DATE FORMAT: YYYY-MM-DD
          "name": "poundsterlingbuyrate"
       }
    ]
-}  
+}
 ```
+
 **Terms of Use**
-Refer to this link to read the Terms of Use: 
+Refer to this link to read the Terms of Use:
 https://indexa.do/api-terms-of-use
